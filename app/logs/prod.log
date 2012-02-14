@@ -1,0 +1,6 @@
+[2012-02-07 11:58:04] request.INFO: Matched route "homepage" (parameters: "_controller": "HopliteFrontendBundle:Default:index", "_route": "homepage") [] []
+[2012-02-07 11:58:04] request.CRITICAL: InvalidArgumentException: Bundle "HopliteFrontendBundle" does not exist or it is not enabled. Maybe you forgot to add it in the registerBundles() function of your AppKernel.php file? (uncaught exception) at /data/marta/app/bootstrap.php.cache line 578 [] []
+[2012-02-07 11:58:47] request.INFO: Matched route "homepage" (parameters: "_controller": "HopliteFrontendBundle:Default:index", "_route": "homepage") [] []
+[2012-02-07 11:58:47] request.CRITICAL: InvalidArgumentException: Bundle "HopliteFrontendBundle" does not exist or it is not enabled. Maybe you forgot to add it in the registerBundles() function of your AppKernel.php file? (uncaught exception) at /data/marta/app/bootstrap.php.cache line 578 [] []
+[2012-02-07 11:58:51] request.INFO: Matched route "homepage" (parameters: "_controller": "HopliteFrontendBundle:Default:index", "_route": "homepage") [] []
+[2012-02-07 11:58:51] request.CRITICAL: InvalidArgumentException: Bundle "HopliteFrontendBundle" does not exist or it is not enabled. Maybe you forgot to add it in the registerBundles() function of your AppKernel.php file? (uncaught exception) at /data/marta/app/bootstrap.php.cache line 578 [] []

@@ -1,0 +1,17 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    {% block google %}{% endblock %}
+  </head>
+  <body>
+    {% block body %}{% endblock %}
+
+    <footer>
+      &copy; {{ 'now'|date('Y') }} Hoplite Software, S.L.
+    </footer>
+  </body>
+</html>

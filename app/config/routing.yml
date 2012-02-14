@@ -1,0 +1,63 @@
+#TeachersBundle:
+#    resource: "@TeachersBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+TeachingBundle:
+    resource: "@TeachingBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+DocumentationBundle:
+    resource: "@DocumentationBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+ActivityBundle:
+    resource: "@ActivityBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+#UtilBundle:
+#    resource: "@UtilBundle/Controller/"
+#    type:     annotation
+#    prefix:   /
+
+BackendBundle:
+    resource: "@BackendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+FrontendBundle:
+    resource: "@FrontendBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+# Internal routing configuration to handle ESI
+#_internal:
+#   resource: "@FrameworkBundle/Resources/config/routing/internal.xml"
+#   prefix:   /_internal
+
+
+homepage:
+  pattern: /
+  defaults: { _controller: FrontendBundle:Default:index }
+
+user_login:
+  pattern: /usuario/login
+  defaults: { _controller: UtilBundle:User:login }
+
+user_login_check:
+  pattern: /login_check
+#  defaults: { _controller: UtilBundle:User:check }
+
+user_logout:
+  pattern: /logout
+#  defaults: { _controller: UtilBundle:User:logout }
+
+
+user_home:
+  pattern: /usuario/{login}
+  defaults: { _controller: TeachersBundle:Default:user }
+
+

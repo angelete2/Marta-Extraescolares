@@ -1,0 +1,22 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>{% block title %}{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+    {% block javascripts %}{% endblock %}
+    {% block google %}{% endblock %}
+  </head>
+  <body>
+    <nav>
+    <ul>
+      <li><a href="{{ path('admin_teachers') }}">Profesores</a></li>
+    </ul>
+    </nav>
+    {% block body %}{% endblock %}
+
+    <footer>
+      &copy; {{ 'now'|date('Y') }} Hoplite Software, S.L.
+    </footer>
+  </body>
+</html>
